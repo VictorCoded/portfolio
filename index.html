@@ -9,6 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos responsivos */
+        
+        @media screen and (max-width: 768px) {
+            /* Estilos para dispositivos com largura de tela até 768px */
+            .meu-nome h1 {
+                font-size: 24px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            /* Estilos para dispositivos com largura de tela até 480px */
+            .meu-nome h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
     <title>Victor Henrique</title>
 </head>
 
@@ -25,17 +42,22 @@
         </nav>
 
         <div class="meu-nome">
-            <h1>Victor <span>Henrique</span></h1>
+            <h1>
+                <span id="typed-text"></span>
+                <span class="cursor"></span>
+            </h1>
             <h3>Programador Front End</h3>
         </div>
     </div>
 
     <section id="sobre">
-        <img src="./img/victor.jpeg">
+        <img src="./img/victor.jpeg" alt="Foto de Victor Henrique">
         <div>
             <h2>Sobre mim</h2>
             <p>Eu sou um Programador Front End, tenho experiência e conhecimento criando aplicações com HTML, CSS, JavaScript, React e Node.</p>
-            <button>Entre em contato</button>
+            <a href="MeuCurriculo.pdf" download="meu_curriculo.pdf">
+                <button class="button-animation">Baixar currículo</button>
+            </a>
         </div>
     </section>
 
@@ -45,33 +67,32 @@
         <div class="card-projetos">
 
             <div class="card">
-                <img src="./img/netflix.png">
+                <img src="./img/netflix.png" alt="Projeto Netflix">
                 <h5>Netflix</h5>
-                <p>a tela de login do projeto Netflix desempenha um papel fundamental na experiência do usuário, oferecendo uma interface atraente e confiável.</p>
+                <p>A tela de login do projeto Netflix desempenha um papel fundamental na experiência do usuário, oferecendo uma interface atraente e confiável.</p>
                 <a href="https://login-netflix01.netlify.app" target="_blank">Ver Projeto</a>
             </div>
 
             <div class="card">
-                <img src="./img/starbucks.png">
+                <img src="./img/starbucks.png" alt="Projeto Starbucks">
                 <h5>Starbucks</h5>
                 <p>As lojas do Starbucks são um refúgio acolhedor, convidando as pessoas a relaxar, socializar e desfrutar de momentos tranquilos.</p>
                 <a href="https://starbucks-clone01.netlify.app" target="_blank">Ver Projeto</a>
             </div>
 
             <div class="card">
-                <img src="./img/crono.png">
+                <img src="./img/crono.png" alt="Projeto Cronômetro">
                 <h5>Cronometro</h5>
                 <p>O cronômetro é uma ferramenta versátil e funcional que permite medir com precisão o tempo decorrido. Comumente utilizado em diversas áreas, como esportes e etc.</p>
                 <a href="https://my-stopwatch1.netlify.app" target="_blank">Ver Projeto</a>
             </div>
 
             <div class="card">
-                <img src="./img/previsao.png" height="80">
+                <img src="./img/previsao.png" alt="Projeto Previsão do Tempo" height="80">
                 <h5>Previsão do tempo</h5>
                 <p>A previsão do tempo é um prognóstico das condições atmosféricas esperadas em um determinado período de tempo e localização geográfica.</p>
                 <a href="https://previsao-do-tempo01.netlify.app" target="_blank">Ver Projeto</a>
             </div>
-
         </div>
     </div>
 
@@ -81,16 +102,31 @@
 
         <div class="social">
             <a href="https://www.linkedin.com/in/victor-henrique1/" target="_blank">
-                <img src="./img/linkedin.png">
+                <img src="./img/linkedin.png" alt="LinkedIn">
             </a>
 
             <a href="https://wa.me/5511981744993?text=Ol%C3%A1+Victor%2C+vim+atrav%C3%A9s+do+seu+portf%C3%B3lio+no+GitHub" target="_blank">
-                <img src="./img/telefone.png">
+                <img src="./img/telefone.png" alt="WhatsApp">
             </a>
         </div>
-
     </footer>
 
+    <script>
+        const text = "Victor Henrique";
+        const delay = 200; // Tempo de atraso entre cada caractere (em milissegundos)
+
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(type, delay);
+            }
+        }
+
+        setTimeout(type, 1000); // Tempo inicial antes de começar a digitar
+    </script>
 </body>
 
 </html>

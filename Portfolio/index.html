@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+
+    <title>Portfólio</title>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-text">Portfólio</span>
+                </a>
+            </div><!--logo-->
+    
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+    
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+    
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+    
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+    
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+    
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+    
+    <main>
+        <section class="topo-do-site" id="home">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO SOLUÇÕES EM CÓDIGOS EFICIENTES<span>.</span></h1>
+                        <p>Com ampla experiência em desenvolvimento Full Stack, meu foco é criar sistemas escaláveis que aliam performance, segurança e uma experiência de usuário excepcional. Vamos juntos levar sua visão ao próximo nível com tecnologia de ponta e estratégias eficientes.</p>
+
+                        <div class="btn-contato">
+                            <a href="MeuCurriculo.pdf" download="meu_curriculo.pdf">
+                                <button class="button-animation">Baixar currículo</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/foto.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="especiliadades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Criação de sites dinâmicos e responsivos, utilizando tecnologias como CSS, JavaScript, PHP, PHYTON e frameworks modernos, garantindo uma experiência de navegação otimizada e intuitiva para o usuário.</p>
+                    </div><!--especialidades-box-->
+            
+                    <div class="especialidades-box">
+                        <i class="bi bi-shop-window"></i>
+                        <h3>E-commerce</h3>
+                        <p>Desenvolvimento de lojas online integradas, com foco em performance, segurança e usabilidade.</p>
+                    </div><!--especialidades-box-->
+            
+                    <div class="especialidades-box">
+                        <i class="bi bi-file-earmark-code"></i>
+                        <h3>API & Integrações</h3>
+                        <p>Desenvolvimento de APIs RESTful, integração de sistemas e automação de processos, proporcionando soluções eficientes e escaláveis para comunicação entre plataformas e sistemas externos.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->            
+        </section><!--especiliadades-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU VICTOR HENRIQUE.</span></h2>
+                        <p>Sou um desenvolvedor Full Stack em formação em Ciência da Computação, movido pela paixão por tecnologia e inovação.</p>
+                        <p>Busco sempre entregar sistemas robustos e escaláveis, aplicando boas práticas de desenvolvimento e trabalho em equipe para garantir qualidade e resultados dentro dos prazos.</p>
+                        <p>Estou sempre pronto para novos desafios e oportunidades de transformar ideias em soluções digitais.</p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/victor-henrique1/"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->                    
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->  
+
+        <section class="formulario" id="formulario">
+            <div class="interface" id="contato">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="https://formsubmit.co/v.henriquecarvalho10@gmail.com" method="POST">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required maxlength="50">
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="telefone" id="telefone" placeholder="Seu celular:">
+                    <div class="textarea-container">
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required oninput="contarCaracteres()"></textarea>
+                        <div id="contador">0/500</div>
+                    </div>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR" onclick="sendEmail()">
+                    </div>
+                    <input type="hidden" name="_subject" value="Oportunidade">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://victor-portfolio01.netlify.app">
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
+    </main>
+<footer>
+    <div class="interface">
+        <!-- Linha Superior do Footer -->
+        <div class="line-footer">
+            <div class="flex">
+                <div class="logo-footer">
+                    <span class="logo-text">Portfólio</span> <!-- Aqui usamos a logo com texto -->
+                </div><!--logo-footer-->
+                <div class="btn-social">
+                    <a href="mailto:v.henriquecarvalho10@gmail.com"><button><i class="bi bi-envelope-fill"></i></button></a>
+                    <a href="https://www.linkedin.com/in/victor-henrique1/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                </div><!--btn-social-->
+            </div><!--flex-->
+        </div><!--line-footer-->
+    </div><!--interface-->
+</footer>
+    </html>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    // Máscara para o campo de celular
+    const celular = document.getElementById('telefone');
+    celular.addEventListener('input', mascaraCelular);
+
+    // Máscara para o campo de nome
+    const nome = document.getElementById('nome');
+    nome.addEventListener('input', mascaraNome);
+});
+
+function mascaraCelular(event) {
+    let valor = event.target.value;
+
+    // Remove tudo que não for número
+    valor = valor.replace(/\D/g, "");
+
+    // Aplica a máscara (XX) XXXXX-XXXX
+    if (valor.length <= 2) {
+        valor = `(${valor}`;
+    } else if (valor.length <= 7) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+    } else {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7, 11)}`;
+    }
+
+    event.target.value = valor;
+}
+
+function mascaraNome(event) {
+    let valor = event.target.value;
+
+    // Permite letras com acento, ç, e espaços
+    valor = valor.replace(/[^a-zA-ZáàâäãéèêëíìîïóòôöõúùûüçÇ\s]/g, "");
+
+    event.target.value = valor;
+}
+    </script>
+    <script>
+        async function sendEmail() {
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
+        
+            try {
+                const response = await fetch('https://formsubmit.co/v.henriquecarvalho10@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                });
+                
+                if (response.ok) {
+                    alert('Formulário enviado com sucesso!');
+                    form.reset(); // Limpa o formulário
+                } else {
+                    alert('Erro ao enviar o formulário.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Houve um problema ao enviar o formulário.');
+            }
+        }
+        </script>
+    
